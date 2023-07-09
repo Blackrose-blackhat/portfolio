@@ -13,8 +13,8 @@ export default function RootLayout({
   return (
     <html lang="en">
      
-      <body >
-        <ThemeProvider enableSystem ={true} attribute='class'>
+      <body>
+        <ThemeProvider enableSystem ={true} attribute="class">
         <Navbar />
         {children}
         </ThemeProvider>

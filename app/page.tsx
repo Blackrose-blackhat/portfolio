@@ -1,8 +1,11 @@
 'use-client' 
+import AboutSection from "@/components/AboutSection"
+import HeroSection from "@/components/HeroSection"
 export default function Home() {
   return (
-    <main>
-      <h1 >Hello</h1>
+    <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
+      <HeroSection />
+      <AboutSection />
     </main>
   )
 }
