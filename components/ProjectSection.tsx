@@ -8,21 +8,21 @@ const projects = [
   {
     name:"Fintelligent",
     description:"Fintelligent is a finance blog page made with react and firebase ",
-    image:`/fintelligent.png`,
+    image:`/fintelligent.jpg`,
     github:"https://github.com/Blackrose-blackhat/fintelligent",
     link:"https://fintelligent-adfce.web.app/"
   },
   {
     name:"Scorekeeper",
     description:"Scorekeeper is a simple app made with flutter to take a track of scores ",
-    image:`/scorekeeper.jpeg`,
+    image:`/scorekeeper1.jpeg`,
     github:"https://github.com/Blackrose-blackhat/scoreKeeper",
     link:""
   },
   {
     name:"Instagram Clone",
     description:"Instagram clone is made with Flutter, Nodejs and Socket IO  ",
-    image:`/insta_clone.jpeg`,
+    image:`/insta_clone.jpg`,
     github:"https://github.com/Blackrose-blackhat/instagram_clone",
     link:""
   },

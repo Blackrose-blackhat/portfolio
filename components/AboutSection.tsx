@@ -51,7 +51,7 @@ const AboutSection = () => {
                         <span className='font-bol text-teal-500'>
                             never stop giving
                         </span> {" "}
-                        and that&#30;s what i strive to do , I have a passion for
+                        and that's what i strive to do , I have a passion for
                         technology and a desire to always push the limits of what is possible.
                         I am excited to see where my career takes me and am always open to
                         new opportunities.
@@ -64,7 +64,7 @@ const AboutSection = () => {
                     <div className='flex flex-wrap flex-row justify-center md:justify-start'>
                         {skills.map((item,idx) => {
                             return (
-                                <p className='bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold' key={idx}>{item.skill}</p>
+                                <p className=' hover:scale-105  cursor-pointer bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold' key={idx}>{item.skill}</p>
                             )
                         })}
                     </div>

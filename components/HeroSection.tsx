@@ -20,8 +20,9 @@ const HeroSection = () => {
           and an Open Source enthusiast!
         </p>
         <Link 
+          
           to='projects'
-          className=' rounded-md text-neutral-100 font-semibold px-6 py-3 bg-teal-600'
+          className=' cursor-pointer rounded-md text-neutral-100 font-semibold px-6 py-3 bg-teal-600'
           activeClass='active'
           spy={true}
           smooth={true}
