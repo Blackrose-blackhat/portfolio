@@ -14,7 +14,8 @@ const skills = [
     {skill: "Flutter"},
     {skill: "Kotlin"},
     {skill: "Node.js"},
-    {skill: "mongo DB"}
+    {skill: "mongo DB"},
+    {skill:"Dart"}
 ]
 
 const AboutSection = () => {

@@ -13,19 +13,21 @@ const projects = [
     link:"https://fintelligent-adfce.web.app/"
   },
   {
+    name:"Academia Hub",
+    description:"Academia Hub is a web app where all academics material are present. It even has a doubt section to ask a doubt. Currently it has 150+ users registered ",
+    image:`/academia.jpg`,
+    github:"https://github.com/Blackrose-blackhat/Academia_hub",
+    link:"https://academia-hub.web.app/"
+  },
+  {
     name:"Scorekeeper",
     description:"Scorekeeper is a simple app made with flutter to take a track of scores ",
     image:`/scorekeeper1.jpeg`,
     github:"https://github.com/Blackrose-blackhat/scoreKeeper",
     link:""
   },
-  {
-    name:"Instagram Clone",
-    description:"Instagram clone is made with Flutter, Nodejs and Socket IO  ",
-    image:`/insta_clone.jpg`,
-    github:"https://github.com/Blackrose-blackhat/instagram_clone",
-    link:""
-  },
+  
+  
 
 ]
 
