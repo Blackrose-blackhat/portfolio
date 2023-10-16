@@ -52,7 +52,7 @@ const AboutSection = () => {
                         <span className='font-bol text-teal-500'>
                             never stop giving
                         </span> {" "}
-                        and that's what i strive to do , I have a passion for
+                        and that&apos;s what i strive to do , I have a passion for
                         technology and a desire to always push the limits of what is possible.
                         I am excited to see where my career takes me and am always open to
                         new opportunities.
