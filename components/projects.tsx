@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Github, ExternalLink, Database, Brain, Users } from "lucide-react"
+import Link from "next/link"
 
 export function Projects() {
   const projects = [
@@ -14,8 +15,8 @@ export function Projects() {
         "Built modular agent-based architecture with Vercel AI SDK. Supports SQL and NoSQL with query traceability and error feedback.",
       icon: <Brain className="h-6 w-6" />,
       technologies: ["Next.js", "TypeScript", "PostgreSQL", "MongoDB", "Docker"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Blackrose-blackhat/Neurobase",
+      live: "https://neurobase-gpt.vercel.app/",
       featured: true,
     },
     {
@@ -25,8 +26,8 @@ export function Projects() {
         "Built a full-stack app where devs upload resumes and GitHub profiles for sarcastic, AI-generated feedback. Used Go for backend services including file parsing, API routing, and LLM interaction.",
       icon: <Database className="h-6 w-6" />,
       technologies: ["Go", "Next.js", "TypeScript", "Gemini API", "ShadcnUI"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Blackrose-blackhat/404SkillNotFound-frontend",
+      live: "https://xcuseshub.vercel.app/",
       featured: true,
     },
     {
@@ -35,8 +36,8 @@ export function Projects() {
       longDescription: "Developed a matching system to recommend gigs by comparing user skill profiles.",
       icon: <Users className="h-6 w-6" />,
       technologies: ["Next.js", "MongoDB", "Clerk", "Nodemailer", "ShadcnUI"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Blackrose-blackhat/TeamUP2",
+      live: "https://teamuphacks.vercel.app/",
       featured: false,
     },
   ]
@@ -87,16 +88,16 @@ export function Projects() {
 
                 <div className="flex gap-2">
                   <Button variant="outline" size="sm" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Link href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" />
                       Code
-                    </a>
+                    </Link>
                   </Button>
                   <Button variant="outline" size="sm" asChild>
-                    <a href={project.live} target="_blank" rel="noopener noreferrer">
+                    <Link href={project.live} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </CardContent>

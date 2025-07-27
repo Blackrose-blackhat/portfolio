@@ -29,6 +29,16 @@ export function Experience() {
         "Integrated Redux Toolkit to manage complex state and data synchronization",
       ],
     },
+    {
+      title:"Web Develoepr Intern",
+      company:"Matlync Services",
+      location:"Remote",
+      period:"Nov 2023 - Dec 2023",
+      achievements :[
+        "Integrated PoucDB for in browser storage",
+        "Implemented Electronjs + vitejs to make desktop application"
+      ]
+    },
   ]
 
   return (

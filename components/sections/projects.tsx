@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Github, ExternalLink } from "lucide-react"
+import Link from "next/link"
 
 export function Projects() {
   const projects = [
@@ -13,8 +14,8 @@ export function Projects() {
       details:
         "Built modular agent-based architecture with Vercel AI SDK. Supports SQL and NoSQL with query traceability and error feedback.",
       technologies: ["Next.js", "TypeScript", "PostgreSQL", "MongoDB", "Docker"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Blackrose-blackhat/Neurobase",
+      live: "https://neurobase-gpt.vercel.app/",
     },
     {
       title: "XcuseHub",
@@ -22,16 +23,16 @@ export function Projects() {
       details:
         "Built a full-stack app where devs upload resumes and GitHub profiles for sarcastic, AI-generated feedback. Used Go for backend services including file parsing, API routing, and LLM interaction.",
       technologies: ["Go", "Next.js", "TypeScript", "Gemini API", "ShadcnUI"],
-      github: "#",
-      live: "#",
+     github: "https://github.com/Blackrose-blackhat/404SkillNotFound-frontend",
+      live: "https://xcuseshub.vercel.app/",
     },
     {
       title: "TeamUp",
       description: "Platform where users post gigs and apply based on matching skillsets.",
       details: "Developed a matching system to recommend gigs by comparing user skill profiles.",
       technologies: ["Next.js", "MongoDB", "Clerk", "Nodemailer", "ShadcnUI"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Blackrose-blackhat/TeamUP2",
+      live: "https://teamuphacks.vercel.app/",
     },
   ]
 
@@ -66,10 +67,10 @@ export function Projects() {
                     className="hover:scale-105 transition-all duration-200 bg-transparent text-xs sm:text-sm h-8 sm:h-9"
                     asChild
                   >
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Link href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="h-3 w-3 sm:h-4 sm:w-4" />
                       <span className="ml-1 sm:ml-2">Code</span>
-                    </a>
+                    </Link>
                   </Button>
                   <Button
                     variant="outline"
@@ -77,10 +78,10 @@ export function Projects() {
                     className="hover:scale-105 transition-all duration-200 bg-transparent text-xs sm:text-sm h-8 sm:h-9"
                     asChild
                   >
-                    <a href={project.live} target="_blank" rel="noopener noreferrer">
+                    <Link href={project.live} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4" />
                       <span className="ml-1 sm:ml-2">Live</span>
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </div>

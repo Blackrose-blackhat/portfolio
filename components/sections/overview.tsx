@@ -71,16 +71,7 @@ export function Overview() {
                 <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
             </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="hover:scale-110 transition-all duration-200 bg-transparent h-10 w-10 sm:h-11 sm:w-11"
-              asChild
-            >
-              <a href="https://musharaf-parwej.vercel.app" target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="h-4 w-4 sm:h-5 sm:w-5" />
-              </a>
-            </Button>
+            
           </div>
         </div>
       </div>
