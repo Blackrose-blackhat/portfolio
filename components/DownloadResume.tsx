@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
 
-const RESUME_PATH = "/Musharaf_Parwej_Resume.pdf"
+const RESUME_PATH = "/resume.pdf"
 const RESUME_NAME = "Musharaf_Parwej_Resume.pdf"
 
 export function DownloadResumeButton() {
