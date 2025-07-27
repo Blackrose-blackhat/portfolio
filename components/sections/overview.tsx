@@ -6,7 +6,7 @@ import { Download, MapPin, Phone, Mail, Github, Linkedin, ExternalLink } from "l
 import { useCallback } from "react"
 import { DownloadResumeButton } from "../DownloadResume"
 
-const RESUME_PATH = "/Musharaf_Parwej_Resume.pdf"
+const RESUME_PATH = "/resume.pdf"
 const RESUME_NAME = "Musharaf_Parwej_Resume.pdf"
 export function Overview() {
 
