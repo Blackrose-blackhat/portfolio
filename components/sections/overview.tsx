@@ -7,7 +7,7 @@ import { useCallback } from "react"
 import { DownloadResumeButton } from "../DownloadResume"
 
 const RESUME_PATH = "/resume.pdf"
-const RESUME_NAME = "Musharaf_Parwej_Resume.pdf"
+const RESUME_NAME = "resume.pdf"
 export function Overview() {
 
 
