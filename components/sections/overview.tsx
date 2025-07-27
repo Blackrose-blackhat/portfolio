@@ -3,8 +3,16 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Download, MapPin, Phone, Mail, Github, Linkedin, ExternalLink } from "lucide-react"
+import { useCallback } from "react"
+import { DownloadResumeButton } from "../DownloadResume"
 
+const RESUME_PATH = "/Musharaf_Parwej_Resume.pdf"
+const RESUME_NAME = "Musharaf_Parwej_Resume.pdf"
 export function Overview() {
+
+
+  
+  
   return (
     <section id="overview" className="animate-fade-in-up pt-4 sm:pt-8 lg:pt-12">
       <div className="text-center mb-8 sm:mb-12 lg:mb-16">
@@ -45,10 +53,7 @@ export function Overview() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-10 lg:mb-12 animate-slide-in-left animation-delay-300 px-4 sm:px-0">
-          <Button className="w-full sm:w-auto hover:scale-105 transition-all duration-200 h-10 sm:h-11 text-sm sm:text-base">
-            <Download className="h-4 w-4 mr-2" />
-            Download Resume
-          </Button>
+          <DownloadResumeButton />
 
           <div className="flex gap-2 sm:gap-3">
             <Button
