@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "neurobase",
+    "title": "Neurobase",
+    "description": "AI-powered developer tool to query PostgreSQL and MongoDB in natural language.",
+    "details": "Built modular agent-based architecture with Vercel AI SDK. Supports SQL and NoSQL with query traceability and error feedback.",
+    "technologies": ["Next.js", "TypeScript", "PostgreSQL", "MongoDB", "Docker"],
+    "github": "https://github.com/Blackrose-blackhat/Neurobase",
+    "live": "https://neurobase-gpt.vercel.app/",
+    "role": "Full-stack Developer",
+    "timeline": "Jan 2024 – Mar 2024",
+    "problem": "Developers struggle to query databases using natural language.",
+    "solution": "Built an AI-powered interface with query traceability and error feedback.",
+    "impact": "Improved developer efficiency by reducing time spent writing complex queries."
+  },
+  {
+    "slug": "xcusehub",
+    "title": "XcuseHub",
+    "description": "AI-powered platform that roasts and reviews developer portfolios with brutal honesty.",
+    "details": "Built a full-stack app where devs upload resumes and GitHub profiles for sarcastic, AI-generated feedback. Used Go for backend services including file parsing, API routing, and LLM interaction.",
+    "technologies": ["Go", "Next.js", "TypeScript", "Gemini API", "ShadcnUI"],
+    "github": "https://github.com/Blackrose-blackhat/404SkillNotFound-frontend",
+    "live": "https://xcuseshub.vercel.app/",
+    "role": "Backend + Frontend Developer",
+    "timeline": "Feb 2024 – Apr 2024",
+    "problem": "Developers often lack honest feedback on their portfolios.",
+    "solution": "Created a sarcastic AI reviewer that roasts portfolios and resumes.",
+    "impact": "Helped devs identify weak points in their portfolio while keeping the experience fun."
+  },
+  {
+    "slug": "teamup",
+    "title": "TeamUp",
+    "description": "Platform where users post gigs and apply based on matching skillsets.",
+    "details": "Developed a matching system to recommend gigs by comparing user skill profiles.",
+    "technologies": ["Next.js", "MongoDB", "Clerk", "Nodemailer", "ShadcnUI"],
+    "github": "https://github.com/Blackrose-blackhat/TeamUP2",
+    "live": "https://teamuphacks.vercel.app/",
+    "role": "Full-stack Developer",
+    "timeline": "Dec 2023 – Feb 2024",
+    "problem": "Freelancers struggle to find gigs that match their exact skills.",
+    "solution": "Implemented a matching algorithm based on skills and gig requirements.",
+    "impact": "Increased successful gig applications and reduced irrelevant matches."
+  }
+]
