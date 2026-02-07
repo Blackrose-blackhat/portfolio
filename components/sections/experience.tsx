@@ -1,8 +1,3 @@
-"use client"
-
-import { Badge } from "@/components/ui/badge"
-import { Calendar, MapPin } from "lucide-react"
-
 export function Experience() {
   const experiences = [
     {
@@ -30,66 +25,59 @@ export function Experience() {
       ],
     },
     {
-      title:"Web Develoepr Intern",
-      company:"Matlync Services",
-      location:"Remote",
-      period:"Nov 2023 - Dec 2023",
-      achievements :[
+      title: "Web Develoepr Intern",
+      company: "Matlync Services",
+      location: "Remote",
+      period: "Nov 2023 - Dec 2023",
+      achievements: [
         "Integrated PoucDB for in browser storage",
-        "Implemented Electronjs + vitejs to make desktop application"
-      ]
+        "Implemented Electronjs + vitejs to make desktop application",
+      ],
     },
-  ]
+  ];
 
   return (
-    <section id="experience" className="mb-16">
-      <div className="prose prose-neutral dark:prose-invert max-w-none">
-        <h2>Experience</h2>
-      </div>
+    <section id="experience" className="mb-0">
+      <h2 className="text-xl font-bold border-b border-border/10 pb-2 mb-6">
+        Experience
+      </h2>
 
-      <div className="space-y-8 mt-6">
+      <div className="space-y-10">
         {experiences.map((exp, index) => (
-          <div key={index} className="border-l-2 border-muted pl-6 relative">
-            <div className="absolute w-3 h-3 bg-primary rounded-full -left-2 top-1"></div>
-
+          <div key={index} className="group">
             <div className="mb-4">
-              <div className="flex items-center gap-2 mb-2">
-                <h3 className="text-lg font-semibold">{exp.title}</h3>
-                {exp.current && (
-                  <Badge
-                    variant="secondary"
-                    className="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
-                  >
-                    Current
-                  </Badge>
-                )}
+              <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-1">
+                <h3 className="text-lg font-bold text-foreground mt-0 mb-0">
+                  {exp.title}
+                </h3>
               </div>
 
-              <p className="font-medium text-primary mb-2">{exp.company}</p>
-
-              <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
-                <div className="flex items-center">
-                  <MapPin className="h-3 w-3 mr-1" />
-                  {exp.location}
-                </div>
-                <div className="flex items-center">
-                  <Calendar className="h-3 w-3 mr-1" />
-                  {exp.period}
-                </div>
+              <div className="flex items-center gap-2 text-base font-semibold text-muted-foreground/90">
+                {exp.company}
+                {exp.current && (
+                  <span className="text-[10px] font-bold uppercase tracking-widest px-1.5 py-0.5 bg-primary/10 text-primary/80 rounded-sm">
+                    Current
+                  </span>
+                )}
               </div>
             </div>
 
-            <ul className="space-y-2">
+            <div className="space-y-1">
               {exp.achievements.map((achievement, i) => (
-                <li key={i} className="text-sm flex items-start">
-                  <span className="text-muted-foreground mr-2 mt-1">•</span>
+                <div
+                  key={i}
+                  className="text-[15px] leading-relaxed opacity-80 flex items-start gap-1.5"
+                >
+                  <span className="text-muted-foreground/40 font-mono mt-0.5">
+                    #
+                  </span>
                   <span>{achievement}</span>
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         ))}
       </div>
     </section>
-  )
+  );
 }

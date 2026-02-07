@@ -1,157 +1,47 @@
-"use client"
-
-import { useState } from "react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogClose,
-} from "@/components/ui/dialog"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import projects from "@/data/projects.json"
+import Link from "next/link";
+import projects from "@/data/projects.json";
 
 export function Projects() {
-  const [openProject, setOpenProject] = useState<string | null>(null)
-  const project = openProject ? projects.find((p) => p.slug === openProject) : null
-
   return (
-    <section id="projects" className="animate-fade-in-up w-full px-4 sm:px-6 lg:px-8">
-      <div className="prose prose-neutral dark:prose-invert max-w-none mb-6 sm:mb-8">
-        <h2 className="text-xl sm:text-2xl lg:text-3xl">Projects</h2>
-        <p className="text-sm sm:text-base">
-          A selection of projects that showcase my technical skills and problem-solving approach.
-        </p>
+    <section id="projects" className="w-full mb-0">
+      <div className="flex items-center justify-between mb-8 border-b border-border/10 pb-2">
+        <h2 className="text-[13px] font-bold uppercase tracking-widest text-muted-foreground/40">
+          Archive
+        </h2>
       </div>
 
-      <TooltipProvider>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-          {projects.map((proj) => (
-            <Card
-              key={proj.slug}
-              className="w-full hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
-            >
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg sm:text-xl font-semibold mb-2">{proj.title}</CardTitle>
-                <p className="text-muted-foreground mb-3 text-sm sm:text-base leading-relaxed">
-                  {proj.description}
-                </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {projects.map((proj) => (
+          <Link
+            key={proj.slug}
+            href={`/work/${proj.slug}`}
+            className="group block border border-border/10 rounded-sm bg-muted/5 hover:bg-muted/10 transition-all duration-300 no-underline overflow-hidden"
+          >
+            <div className="p-5">
+              <h3 className="text-[15px] font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                {proj.title}
+              </h3>
 
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      onClick={() => setOpenProject(proj.slug)}
-                    >
-                      Case Study
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent side="top" className="bg-muted-foreground text-background text-sm">
-                    View full case study for {proj.title}
-                  </TooltipContent>
-                </Tooltip>
-              </CardHeader>
-
-              <CardContent className="pt-0 flex flex-wrap gap-2">
-                {proj.technologies.map((tech) => (
-                  <Badge
+              <div className="flex flex-wrap gap-1.5">
+                {proj.technologies.slice(0, 2).map((tech) => (
+                  <span
                     key={tech}
-                    variant="outline"
-                    className="text-xs hover:bg-accent transition-colors duration-200"
+                    className="text-[10px] font-mono text-muted-foreground/60 uppercase tracking-tighter"
                   >
                     {tech}
-                  </Badge>
+                  </span>
                 ))}
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Dialog */}
-        {project && (
-          <Dialog open={!!project} onOpenChange={() => setOpenProject(null)}>
-            <DialogContent className="w-full sm:max-w-3xl p-6 sm:p-8 sm:rounded-2xl bg-background">
-              <DialogHeader>
-                <DialogTitle className="text-2xl sm:text-3xl font-bold">{project.title}</DialogTitle>
-              </DialogHeader>
-
-              <div className="space-y-4 mt-4 w-full">
-                <p className="text-muted-foreground">{project.description}</p>
-
-                <div className="space-y-2">
-                  <h3 className="text-lg font-semibold">Role & Timeline</h3>
-                  <p><span className="font-medium">Role:</span> {project.role}</p>
-                  <p className="text-sm text-muted-foreground"><span className="font-medium">Timeline:</span> {project.timeline}</p>
-                </div>
-
-                <div className="space-y-2">
-                  <h3 className="text-lg font-semibold">Tech Stack</h3>
-                  <div className="flex flex-wrap gap-2 mt-1">
-                    {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="secondary">{tech}</Badge>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <h3 className="text-lg font-semibold">Problem</h3>
-                  <p className="text-muted-foreground">{project.problem}</p>
-                </div>
-
-                <div className="space-y-2">
-                  <h3 className="text-lg font-semibold">Solution</h3>
-                  <p className="text-muted-foreground">{project.solution}</p>
-                </div>
-
-                <div className="space-y-2">
-                  <h3 className="text-lg font-semibold">Impact</h3>
-                  <p className="text-muted-foreground">{project.impact}</p>
-                </div>
-
-                <div className="flex gap-4 mt-4">
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 border border-muted-foreground rounded-xl hover:bg-accent transition-colors"
-                      >
-                        GitHub
-                      </a>
-                    </TooltipTrigger>
-                    <TooltipContent side="top" className="c text-background text-sm">
-                      View source code on GitHub
-                    </TooltipContent>
-                  </Tooltip>
-
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 border border-muted-foreground rounded-xl hover:bg-accent transition-colors"
-                      >
-                        Live Demo
-                      </a>
-                    </TooltipTrigger>
-                    <TooltipContent side="top" className="bg-muted text-background text-sm">
-                      Check out the live project
-                    </TooltipContent>
-                  </Tooltip>
-                </div>
               </div>
+            </div>
+          </Link>
+        ))}
 
-              <DialogClose asChild />
-            </DialogContent>
-          </Dialog>
-        )}
-      </TooltipProvider>
+        <div className="border border-dashed border-border/10 rounded-sm flex items-center justify-center p-8 opacity-20 hover:opacity-50 transition-opacity cursor-default group">
+          <span className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
+            End of list
+          </span>
+        </div>
+      </div>
     </section>
-  )
+  );
 }

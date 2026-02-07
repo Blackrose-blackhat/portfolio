@@ -1,5 +1,19 @@
 [
   {
+    "slug": "portwatch",
+    "title": "PortWatch",
+    "description": "High-performance observability tool for Linux developers with zero-noise filtering.",
+    "details": "Built with Go and React. Features deep-packet inspection, Docker native identification, and instant kill control. Native support for IPv6 and container protocols.",
+    "technologies": ["Go", "React", "Linux Kernel", "Docker", "TypeScript"],
+    "github": "https://github.com/Blackrose-blackhat/run-state",
+    "live": "https://port-watch.dev",
+    "role": "Lead Engineer",
+    "timeline": "Mar 2024 – Present",
+    "problem": "Linux port monitoring is often noisy and lacks Docker-native context.",
+    "solution": "Implemented heuristic filters and deep-packet inspection for unified, noise-free monitoring.",
+    "impact": "Reduced debugging time for network services by providing instant, relevant telemetry."
+  },
+  {
     "slug": "neurobase",
     "title": "Neurobase",
     "description": "AI-powered developer tool to query PostgreSQL and MongoDB in natural language.",

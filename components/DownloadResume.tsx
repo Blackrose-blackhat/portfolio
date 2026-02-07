@@ -21,7 +21,7 @@ export function DownloadResumeButton() {
   }, [])
 
   return (
-    <Button asChild className="w-full sm:w-auto hover:scale-105 transition-all duration-200 h-10 sm:h-11 text-sm sm:text-base">
+    <Button asChild className="w-full sm:w-auto h-10 sm:h-11 text-sm sm:text-base">
       <Link href={RESUME_PATH} onClick={handleDownload}>
         <Download className="h-4 w-4 mr-2" />
         Download Resume
