@@ -17,9 +17,9 @@ export function Navbar() {
     : null;
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/5">
+    <nav className="sticky top-0 z-50 bg-background border-b border-border/5">
       <div className="max-w-[720px] mx-auto px-6 h-12 flex items-center text-[13px] font-medium text-muted-foreground/50">
-        <div className="flex items-center">
+        <div className="flex items-center mt-5">
           <Link
             href="/"
             className={cn(

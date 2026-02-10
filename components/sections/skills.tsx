@@ -1,8 +1,9 @@
 const skills = [
-  "RAG Systems",
-  "MCP Server",
-  "Agent Guardrails",
+  "Go",
   "TypeScript",
+  "Rust",
+  "Langchain",
+  "LangGraph",
   "Next.js",
   "Node.js",
   "PostgreSQL",
@@ -13,7 +14,7 @@ export function Skills() {
   return (
     <section id="skills" className="mb-0">
       <h2 className="text-xl font-bold border-b border-border/10 pb-2 mb-6">
-        Skills
+        Primary Skills
       </h2>
 
       <div className="flex flex-wrap gap-2">

@@ -60,6 +60,10 @@ export function Experience() {
                   </span>
                 )}
               </div>
+              <div className="text-sm text-muted-foreground/70">
+                {exp.period}
+                {exp.location ? ` • ${exp.location}` : ""}
+              </div>
             </div>
 
             <div className="space-y-1">
