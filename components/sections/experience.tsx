@@ -1,82 +1,61 @@
 export function Experience() {
   const experiences = [
     {
+      title: "Founding Engineer",
+      company: "DueDraft AI",
+      period: "Mar 2026 – Present",
+      current: true,
+      achievements: [
+        "Built the end-to-end DueDraft.ai platform — AI-powered compliance tracking, document drafting, and due diligence for CA/CS firms",
+        "Designed and shipped the compliance watcher engine that auto-maps deadlines from MCA21 and GSTN with WhatsApp/email alerts",
+        "Architected multi-tenant infrastructure on AWS with role-based access, audit trails, and DPDPA-compliant data isolation",
+      ],
+    },
+    {
       title: "Full Stack Developer",
       company: "Quranium",
-      location: "Remote",
-      period: "Apr 2025 – Present",
-      current: true,
+      period: "Oct 2024 – Mar 2026",
+      current: false,
       achievements: [
         "Integrated 4+ smart contracts into a live DEX product, enabling secure swaps and liquidity pooling",
         "Collaborated across backend/frontend teams to ensure seamless API integration and app performance",
         "Optimized front-end data fetches, reducing latency by 30%",
       ],
     },
-    {
-      title: "Front-End Developer Intern",
-      company: "Claw Enterprises",
-      location: "Remote",
-      period: "July 2024 – Sep 2024",
-      current: false,
-      achievements: [
-        "Led the redesign of an AI-integrated courtroom platform using React.js and TailwindCSS",
-        "Implemented responsive UI and smart UX features across all major screen sizes",
-        "Integrated Redux Toolkit to manage complex state and data synchronization",
-      ],
-    },
-    {
-      title: "Web Develoepr Intern",
-      company: "Matlync Services",
-      location: "Remote",
-      period: "Nov 2023 - Dec 2023",
-      achievements: [
-        "Integrated PoucDB for in browser storage",
-        "Implemented Electronjs + vitejs to make desktop application",
-      ],
-    },
   ];
 
   return (
-    <section id="experience" className="mb-0">
-      <h2 className="text-xl font-bold border-b border-border/10 pb-2 mb-6">
+    <section id="experience">
+      <h2 className="font-mono text-sm text-muted-foreground mb-8">
         Experience
       </h2>
 
       <div className="space-y-10">
         {experiences.map((exp, index) => (
-          <div key={index} className="group">
-            <div className="mb-4">
-              <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-1">
-                <h3 className="text-lg font-bold text-foreground mt-0 mb-0">
+          <div key={index}>
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-3">
+              <div>
+                <h3 className="text-base font-semibold text-foreground">
                   {exp.title}
+                  <span className="text-muted-foreground font-normal">
+                    {" "}
+                    — {exp.company}
+                  </span>
                 </h3>
               </div>
-
-              <div className="flex items-center gap-2 text-base font-semibold text-muted-foreground/90">
-                {exp.company}
-                {exp.current && (
-                  <span className="text-[10px] font-bold uppercase tracking-widest px-1.5 py-0.5 bg-primary/10 text-primary/80 rounded-sm">
-                    Current
-                  </span>
-                )}
-              </div>
-              <div className="text-sm text-muted-foreground/70">
+              <span className="font-mono text-xs text-muted-foreground/70 shrink-0">
                 {exp.period}
-                {exp.location ? ` • ${exp.location}` : ""}
-              </div>
+              </span>
             </div>
 
-            <div className="space-y-1">
+            <div className="space-y-1.5 pl-0">
               {exp.achievements.map((achievement, i) => (
-                <div
+                <p
                   key={i}
-                  className="text-[15px] leading-relaxed opacity-80 flex items-start gap-1.5"
+                  className="text-[14px] leading-relaxed text-foreground/80"
                 >
-                  <span className="text-muted-foreground/40 font-mono mt-0.5">
-                    #
-                  </span>
-                  <span>{achievement}</span>
-                </div>
+                  – {achievement}
+                </p>
               ))}
             </div>
           </div>

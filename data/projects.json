@@ -1,5 +1,19 @@
 [
   {
+    "slug": "pux",
+    "title": "Pux",
+    "description": "CLI tool that watches your CI, extracts failure context, and auto-injects it into your AI coding agent.",
+    "details": "Built a real-time GitHub Actions monitor with an ambient terminal companion. Automatically downloads logs, extracts stacktraces, grabs diffs, and writes structured context to .ai-context/failure.md for seamless AI agent integration.",
+    "technologies": ["TypeScript", "Node.js", "GitHub Actions API", "CLI"],
+    "github": "https://github.com/Blackrose-blackhat/pux",
+    "live": "https://pux-site.vercel.app/",
+    "role": "Creator",
+    "timeline": "2025",
+    "problem": "Developers waste 25+ minutes per CI failure opening GitHub, scrolling logs, and copy-pasting errors into AI assistants.",
+    "solution": "Built a CLI that polls GitHub Actions, pulls failure logs, extracts the relevant error window, and writes structured context directly into AI agent config files.",
+    "impact": "Zero-tab, zero-copy-paste CI debugging workflow. Works with Claude Code, Cursor, Copilot, Codex, Gemini, Windsurf, and Cline."
+  },
+  {
     "slug": "portwatch",
     "title": "PortWatch",
     "description": "High-performance observability tool for Linux developers with zero-noise filtering.",
@@ -26,33 +40,5 @@
     "problem": "Developers struggle to query databases using natural language.",
     "solution": "Built an AI-powered interface with query traceability and error feedback.",
     "impact": "Improved developer efficiency by reducing time spent writing complex queries."
-  },
-  {
-    "slug": "xcusehub",
-    "title": "XcuseHub",
-    "description": "AI-powered platform that roasts and reviews developer portfolios with brutal honesty.",
-    "details": "Built a full-stack app where devs upload resumes and GitHub profiles for sarcastic, AI-generated feedback. Used Go for backend services including file parsing, API routing, and LLM interaction.",
-    "technologies": ["Go", "Next.js", "TypeScript", "Gemini API", "ShadcnUI"],
-    "github": "https://github.com/Blackrose-blackhat/404SkillNotFound-frontend",
-    "live": "https://xcuseshub.vercel.app/",
-    "role": "Backend + Frontend Developer",
-    "timeline": "Feb 2024 – Apr 2024",
-    "problem": "Developers often lack honest feedback on their portfolios.",
-    "solution": "Created a sarcastic AI reviewer that roasts portfolios and resumes.",
-    "impact": "Helped devs identify weak points in their portfolio while keeping the experience fun."
-  },
-  {
-    "slug": "teamup",
-    "title": "TeamUp",
-    "description": "Platform where users post gigs and apply based on matching skillsets.",
-    "details": "Developed a matching system to recommend gigs by comparing user skill profiles.",
-    "technologies": ["Next.js", "MongoDB", "Clerk", "Nodemailer", "ShadcnUI"],
-    "github": "https://github.com/Blackrose-blackhat/TeamUP2",
-    "live": "https://teamuphacks.vercel.app/",
-    "role": "Full-stack Developer",
-    "timeline": "Dec 2023 – Feb 2024",
-    "problem": "Freelancers struggle to find gigs that match their exact skills.",
-    "solution": "Implemented a matching algorithm based on skills and gig requirements.",
-    "impact": "Increased successful gig applications and reduced irrelevant matches."
   }
 ]

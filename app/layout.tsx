@@ -62,7 +62,6 @@ export const metadata: Metadata = {
   generator: "Musharaf-parwej",
 };
 
-import { Navbar } from "@/components/navbar";
 import { StructuredData } from "@/components/structured-data";
 
 export default function RootLayout({
@@ -76,7 +75,6 @@ export default function RootLayout({
         <StructuredData />
       </head>
       <body className={`${inter.variable} ${ibmPlexMono.variable} antialiased`}>
-        <Navbar />
         {children}
       </body>
     </html>

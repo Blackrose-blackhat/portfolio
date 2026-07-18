@@ -1,46 +1,39 @@
-import { Avatar, AvatarImage } from "../ui/avatar";
-
 export function Overview() {
   return (
-    <section id="overview" className="mb-8">
-      <div className="flex items-center gap-6 mb-12">
-        <Avatar className="h-20 w-20 border border-border/5 rounded-full overflow-hidden shrink-0">
-          <AvatarImage
-            src="/avatar.jpg"
-            alt="Musharaf Parwej"
-            className="rounded-full object-cover scale-y-125 scale-x-110"
-          />
-        </Avatar>
-        <div className="flex flex-col justify-center">
-          <h1 className="text-xl font-bold tracking-tight text-foreground">
-            Musharaf Parwej
-          </h1>
-          <p className="text-sm text-muted-foreground font-medium leading-relaxed">
-            Software developer
-          </p>
-        </div>
-      </div>
+    <section id="overview" className="pt-16 sm:pt-24">
+      <img
+        src="/avatar.jpg"
+        alt="Musharaf Parwej"
+        className="h-24 w-24 sm:h-28 sm:w-28 rounded-full object-cover border-2 border-border/20 mb-8"
+      />
+      <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground mb-2">
+        Musharaf Parwej
+      </h1>
+      <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8 max-w-[520px]">
+        full-stack engineer building production-grade tools across web3, AI, and
+        cloud-native ecosystems.
+      </p>
 
-      <div className="flex flex-wrap gap-x-6 gap-y-2 mb-8 text-[14px] font-medium">
+      <div className="flex flex-wrap gap-x-5 gap-y-2 font-mono text-sm">
         <a
           href="https://github.com/Blackrose-blackhat"
           target="_blank"
-          className="text-muted-foreground hover:text-foreground transition-all"
+          className="text-muted-foreground hover:text-foreground transition-colors"
         >
-          GitHub
+          github
         </a>
         <a
           href="https://linkedin.com/in/musharafparwej"
           target="_blank"
-          className="text-muted-foreground hover:text-foreground transition-all"
+          className="text-muted-foreground hover:text-foreground transition-colors"
         >
-          LinkedIn
+          linkedin
         </a>
         <a
           href="mailto:mushrafparwej@gmail.com"
-          className="text-muted-foreground hover:text-foreground transition-all"
+          className="text-muted-foreground hover:text-foreground transition-colors"
         >
-          Email
+          email
         </a>
       </div>
     </section>
