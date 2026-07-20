@@ -30,7 +30,7 @@ export function MainContent() {
               github
             </a>
             <a
-              href="https://linkedin.com/in/musharafparwej"
+              href="https://linkedin.com/in/mushraf-parwej"
               target="_blank"
               className="hover:text-foreground transition-colors"
             >

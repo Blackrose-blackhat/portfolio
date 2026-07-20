@@ -7,7 +7,7 @@ export function StructuredData() {
     jobTitle: "Full-Stack Developer",
     sameAs: [
       "https://github.com/Blackrose-blackhat",
-      "https://linkedin.com/in/musharafparwej",
+      "https://linkedin.com/in/mushraf-parwej",
     ],
     description:
       "Full-stack engineer building production-grade tools across Web3, AI, and cloud-native ecosystems.",
