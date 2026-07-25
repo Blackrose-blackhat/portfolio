@@ -1,6 +1,16 @@
 export function Experience() {
   const experiences = [
     {
+      title: "Software Engineer",
+      company: "Dentistry Automation",
+      period: "Jul 2026 – Present",
+      current: true,
+      achievements: [
+        "Building AI-powered RCM automation bots that integrate with 20+ dental practice management systems for insurance verification and payment posting",
+        "Developing automated claims tracking pipelines that reduce denials by 80% through proactive aging detection and EOB processing",
+      ],
+    },
+    {
       title: "Founding Engineer",
       company: "DueDraft AI",
       period: "Mar 2026 – Present",

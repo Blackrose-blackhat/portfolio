@@ -1,6 +1,7 @@
 const skills = [
   "Go",
   "TypeScript",
+  "Python",
   "Rust",
   "Langchain",
   "LangGraph",

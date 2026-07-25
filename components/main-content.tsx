@@ -42,6 +42,12 @@ export function MainContent() {
             >
               email
             </a>
+            <a
+              href="/blogs"
+              className="hover:text-foreground transition-colors"
+            >
+              blogs
+            </a>
           </div>
           <p className="text-muted-foreground/40 text-xs">
             built by musharaf parwej
