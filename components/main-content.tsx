@@ -11,6 +11,14 @@ export function MainContent() {
   return (
     <main className="bg-background min-h-screen selection:bg-muted-foreground/30">
       <div className="max-w-[720px] mx-auto px-6 pb-32">
+        <nav className="flex justify-end pt-6 font-mono text-sm">
+          <a
+            href="/blogs"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            blogs →
+          </a>
+        </nav>
         <div className="space-y-24">
           <Overview />
           <About />

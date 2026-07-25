@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import { Metadata } from "next";
+import { BlogContent } from "@/components/blog-content";
 
 export async function generateMetadata({
   params,
@@ -53,10 +54,7 @@ export default async function BlogPostPage({
           </span>
         </header>
 
-        <article
-          className="blog-content"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
+        <BlogContent html={post.content} />
 
         <div className="mt-16 pt-8 border-t border-border/10">
           <Link
