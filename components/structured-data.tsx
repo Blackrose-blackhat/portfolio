@@ -3,7 +3,7 @@ export function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Musharaf Parwej",
-    url: "https://musharaf.dev",
+    url: "https://musharraf.codes",
     jobTitle: "Full-Stack Developer",
     sameAs: [
       "https://github.com/Blackrose-blackhat",

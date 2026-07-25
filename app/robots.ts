@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://musharaf.dev/sitemap.xml',
+    sitemap: 'https://musharraf.codes/sitemap.xml',
   }
 }

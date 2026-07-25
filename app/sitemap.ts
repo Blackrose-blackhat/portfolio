@@ -2,9 +2,15 @@ import { MetadataRoute } from 'next'
 import projects from '@/data/projects.json'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://musharaf.dev'
+  const baseUrl = 'https://musharraf.codes'
 
-  const routes = ['', '/work', '/freelance', '/achievements'].map((route) => ({
+  const routes = [
+    '',
+    '/work',
+    '/freelance',
+    '/freelance/web-developer-jharkhand',
+    '/achievements',
+  ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,

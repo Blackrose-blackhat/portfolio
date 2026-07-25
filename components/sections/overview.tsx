@@ -16,6 +16,13 @@ export function Overview() {
 
       <div className="flex flex-wrap gap-x-5 gap-y-2 font-mono text-sm">
         <a
+          href="https://musharraf.codes"
+          target="_blank"
+          className="text-muted-foreground hover:text-foreground transition-colors"
+        >
+          website
+        </a>
+        <a
           href="https://github.com/Blackrose-blackhat"
           target="_blank"
           className="text-muted-foreground hover:text-foreground transition-colors"

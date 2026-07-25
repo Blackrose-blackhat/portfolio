@@ -1,5 +1,5 @@
 import type React from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -58,8 +58,12 @@ export const metadata: Metadata = {
     shortcut: "/avatar.jpg",
     apple: "/avatar.jpg",
   },
-  viewport: "width=device-width, initial-scale=1",
   generator: "Musharaf-parwej",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 import { StructuredData } from "@/components/structured-data";

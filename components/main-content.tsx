@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Overview } from "@/components/sections/overview";
 import { About } from "@/components/sections/about";
 import { Experience } from "@/components/sections/experience";
@@ -12,12 +13,20 @@ export function MainContent() {
     <main className="bg-background min-h-screen selection:bg-muted-foreground/30">
       <div className="max-w-[720px] mx-auto px-6 pb-32">
         <nav className="flex justify-end pt-6 font-mono text-sm">
-          <a
-            href="/blogs"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            blogs →
-          </a>
+          <div className="flex gap-4">
+            <Link
+              href="/freelance/web-developer-jharkhand"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              jharkhand seo →
+            </Link>
+            <Link
+              href="/blogs"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              blogs →
+            </Link>
+          </div>
         </nav>
         <div className="space-y-24">
           <Overview />
@@ -30,6 +39,13 @@ export function MainContent() {
 
         <footer className="mt-32 pt-8 border-t border-border/10 font-mono text-sm">
           <div className="flex flex-wrap gap-x-5 gap-y-2 text-muted-foreground/60 mb-4">
+            <a
+              href="https://musharraf.codes"
+              target="_blank"
+              className="hover:text-foreground transition-colors"
+            >
+              website
+            </a>
             <a
               href="https://github.com/Blackrose-blackhat"
               target="_blank"
@@ -56,6 +72,12 @@ export function MainContent() {
             >
               blogs
             </a>
+            <Link
+              href="/freelance/web-developer-jharkhand"
+              className="hover:text-foreground transition-colors"
+            >
+              jharkhand seo
+            </Link>
           </div>
           <p className="text-muted-foreground/40 text-xs">
             built by musharaf parwej
