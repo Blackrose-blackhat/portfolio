@@ -13,20 +13,12 @@ export function MainContent() {
     <main className="bg-background min-h-screen selection:bg-muted-foreground/30">
       <div className="max-w-[720px] mx-auto px-6 pb-32">
         <nav className="flex justify-end pt-6 font-mono text-sm">
-          <div className="flex gap-4">
-            <Link
-              href="/freelance/web-developer-jharkhand"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              jharkhand seo →
-            </Link>
-            <Link
-              href="/blogs"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              blogs →
-            </Link>
-          </div>
+          <Link
+            href="/blogs"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            blogs →
+          </Link>
         </nav>
         <div className="space-y-24">
           <Overview />
@@ -72,12 +64,6 @@ export function MainContent() {
             >
               blogs
             </a>
-            <Link
-              href="/freelance/web-developer-jharkhand"
-              className="hover:text-foreground transition-colors"
-            >
-              jharkhand seo
-            </Link>
           </div>
           <p className="text-muted-foreground/40 text-xs">
             built by musharaf parwej
