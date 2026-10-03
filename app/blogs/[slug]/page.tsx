@@ -18,10 +18,21 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
+    alternates: {
+      canonical: `/blogs/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,
       type: "article",
+      url: `/blogs/${post.slug}`,
+      publishedTime: post.date,
+      authors: ["Musharaf Parwej"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
     },
   };
 }

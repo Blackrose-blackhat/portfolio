@@ -5,6 +5,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blogs",
   description: "Thoughts on building software, developer tools, and AI.",
+  alternates: {
+    canonical: "/blogs",
+  },
+  openGraph: {
+    title: "Blogs",
+    description: "Thoughts on building software, developer tools, and AI.",
+    url: "/blogs",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blogs",
+    description: "Thoughts on building software, developer tools, and AI.",
+  },
 };
 
 export default function BlogsPage() {
